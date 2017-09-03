@@ -1,4 +1,5 @@
 import javax.swing.*;
+import java.awt.*;
 
 public class DrawFunction extends JFrame {
     static double timesx = 10, timesy = 10;
@@ -6,4 +7,7 @@ public class DrawFunction extends JFrame {
         return Math.sin(x) / Math.pow(1.1, -x); //函数表达式；
     }
     int x0, y0;
+    static int W = 1024, H = 768;
+    static double L = -W / 2, R = W / 2;
+    Graphics G;
 }
