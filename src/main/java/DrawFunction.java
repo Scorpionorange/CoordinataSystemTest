@@ -10,4 +10,11 @@ public class DrawFunction extends JFrame {
     static int W = 1024, H = 768;
     static double L = -W / 2, R = W / 2;
     Graphics G;
+
+    public void setOrigin(int x, int y){
+        this.x0 = x;
+        this.y0 = y;
+        //show coordinate axis
+
+    }
 }
