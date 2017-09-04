@@ -98,5 +98,13 @@ public class DrawFunction extends JFrame {
         G.drawString(s, X, Y);
     }
 
-
+    public static void main(String[] args){
+        DrawFunction frame = new DrawFunction();
+        frame.setTitle("DrawFunction");
+        frame.setSize(W, H);
+        frame.setLocationRelativeTo(null);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
+        frame.setResizable(false);
+    }
 }
