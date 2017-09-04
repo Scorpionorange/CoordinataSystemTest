@@ -79,5 +79,24 @@ public class DrawFunction extends JFrame {
         }
     }
 
+    public void drawLine(int x1, int y1, int x2, int y2){
+        int dx = x1 < x2 ? 1 : -1;
+        if(x1 == x2) {
+            drawRec(x1, y1, x2, y2);
+        }
+        else {
+           double d = (double)(y2 - y1) / (x2 - x1);
+           for(int i = x1; i != x2 + dx; i += dx){
+               draw(i, (int)(y1 + (i - x1) * d));
+           }
+        }
+    }
+
+    public void drawString(String s, int x, int y){
+        int X = new Coordinate2D(x, y).getPixelPointX();
+        int Y = new Coordinate2D(x, y).getPixelPointY();
+        G.drawString(s, X, Y);
+    }
+
 
 }
