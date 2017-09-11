@@ -48,6 +48,7 @@ public class DrawFunction extends JFrame {
             return y0 - y;
         }
     }
+
     class NewPanel extends JPanel{
         protected void paintComponent(Graphics g){
             super.paintComponent(g);
@@ -66,7 +67,7 @@ public class DrawFunction extends JFrame {
     public void draw(int x, int y){
         int X = new Coordinate2D(x, y).getPixelPointX();
         int Y = new Coordinate2D(x, y).getPixelPointY();
-        drawLine(X, Y, X, Y);
+        G.drawLine(X, Y, X, Y);
     }
 
     public void drawRec(int x1, int y1, int x2, int y2){
