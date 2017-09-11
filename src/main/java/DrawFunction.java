@@ -7,7 +7,7 @@ public class DrawFunction extends JFrame {
         return Math.sin(x) / Math.pow(1.1, -x); //函数表达式；
     }
     int x0, y0;
-    static int W = 1024, H = 768;
+    static int W = 1920, H = 1080;
     static double L = -W / 2, R = W / 2;
     Graphics G;
 
@@ -106,6 +106,6 @@ public class DrawFunction extends JFrame {
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
-        frame.setResizable(false);
+        frame.setResizable(true);
     }
 }
